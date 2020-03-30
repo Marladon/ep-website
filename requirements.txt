@@ -1,2 +1,4 @@
-django
-gunicorn
+aiohttp
+cchardet
+tortoise-orm
+aiohttp_jinja2

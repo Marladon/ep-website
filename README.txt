@@ -2,8 +2,8 @@
 Больше информации https://ximc.ru/issues/37198
 
 Запуск сервера (для тестов):
-python manage.py runserver
+python server.py
 
 Сборка и запуск контейнера
 sudo docker build . -t ep-web
-sudo docker run --publish 80:8000 --restart=always -d ep-web
+sudo docker run --publish 80:8080 --restart=always -d ep-web
