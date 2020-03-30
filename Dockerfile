@@ -7,4 +7,5 @@ RUN pip install -r requirements.txt
 RUN apt-get update && apt-get install -y sqlite3
 
 EXPOSE 8000
-cmd ["python", "manage.py", "runserver"]
+cmd ["python", "-m", "gunicorn", "main.wsgi", "--workers", "$(nproc)", "--bind", "0.0.0.0:80"]
+

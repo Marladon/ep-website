@@ -25,7 +25,7 @@ SECRET_KEY = '4+&4g8not=s9b$n70-3s5+q=6-p@niqyxyy$r5+tne4j^d5^lt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']  # TODO: more secure?
 
 
 # Application definition
