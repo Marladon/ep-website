@@ -3,3 +3,7 @@
 
 Запуск сервера (для тестов):
 python manage.py runserver
+
+Сборка и запуск контейнера
+sudo docker build . -t ep-web
+sudo docker run --publish 80:8000 --restart=always -d ep-web
