@@ -291,6 +291,7 @@
 	{
 		overflow: hidden;
 		background: #458f0b url(images/bg.png) repeat;
+		height: auto;
 	}
 
 	#header
@@ -396,8 +397,9 @@
 	#page-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 5em 0em 0em 0em;
 		background: #FFF;
+		height: 60%
 	}
 
 	#page
@@ -488,7 +490,7 @@
 	#footer
 	{
 		overflow: hidden;
-		padding: 5em 0em 3em 0em;
+		padding: 1em 0em 1em 0em;
 		border-top: 1px solid rgba(0,0,0,0.08);
 	}
 	
