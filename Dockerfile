@@ -6,5 +6,5 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 EXPOSE 8080
-cmd ["python", "serer.py"]
+cmd ["python", "server.py"]
 

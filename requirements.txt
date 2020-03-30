@@ -1,4 +1,4 @@
 aiohttp
 cchardet
-tortoise-orm
+#tortoise-orm
 aiohttp_jinja2
