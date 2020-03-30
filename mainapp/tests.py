@@ -1,3 +1,9 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class SimpleTest(TestCase):
+    def setUp(self) -> None:
+        pass
+
+    def simple_test(self):
+        pass
