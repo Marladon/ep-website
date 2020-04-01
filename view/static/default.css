@@ -55,7 +55,8 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1000px;
+		width: 70vw;
+		max-width: 1000px;
 	}
 
 /*********************************************************************************/
@@ -90,7 +91,9 @@
     {
         flex-grow: 0;
         flex-shrink: 0;
-        flex-basis: 300px;
+        flex-basis: 25vw;
+        max-width: 500px;
+
         margin-right: 1em;
     }
 
