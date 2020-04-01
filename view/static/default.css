@@ -334,7 +334,7 @@
 	{
 		overflow: hidden;
 		position: relative;
-		padding: 5em 0em;
+		padding: 2.5em 0em;
 	}
 
 /*********************************************************************************/
@@ -344,7 +344,7 @@
 	#logo
 	{
 		position: absolute;
-		top: 2.5em;
+		top: 1em;
 		left: 0;
 	}
 	
@@ -370,7 +370,7 @@
 	#menu
 	{
 		position: absolute;
-		top: 4em;
+		top: 2.5em;
 		right: 0;
 	}
 	
