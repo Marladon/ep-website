@@ -57,10 +57,42 @@
 		margin: 0em auto;
 		width: 1000px;
 	}
+
+/*********************************************************************************/
+/* EyePoint photo with comment style
+/*********************************************************************************/
+
+    .epmain
+    {
+        display:         flex;
+
+	    align-items: center;
+
+        overflow: auto;
+        padding: 1em;
+        color: rgba(0,0,0,0.6);
+    }
+
+    .epdescription
+    {
+        flex-grow: 1;
+        flex-shrink: 1.5;
+        text-align: left;
+    }
+
+
 	
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
+
+    .epimage
+    {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 300px;
+        margin-right: 1em;
+    }
 
 	.image
 	{
@@ -200,6 +232,7 @@
 		font-weight: 400;
 		font-size: 0.90em;
 		color: #FFF;
+		align: right;
 	}
 	
 	.button:before
@@ -397,9 +430,8 @@
 	#page-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em 0em 0em;
+		padding: 5em 0em 2em 0em;
 		background: #FFF;
-		height: 60%
 	}
 
 	#page

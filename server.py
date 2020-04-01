@@ -11,7 +11,7 @@ routes = web.RouteTableDef()
 async def index(request):
     return {}
 
-
+# TODO: use nginx
 routes.static('/static', "view/static")
 
 
