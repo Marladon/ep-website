@@ -3,3 +3,4 @@ cchardet
 #tortoise-orm
 aiohttp_jinja2
 csscompressor
+htmlmin
