@@ -7,7 +7,7 @@ if __name__ == '__main__':
     for root, _, files in walk("."):
         for file in files:
             path = join_path(root, file)
-            if path.endswith(".css") or path.endswith(".html"):
+            if path.endswith(".css"):
                 with open(path, "r") as f:
                     out = compress(f.read())
                 with open(path, "w") as f:
