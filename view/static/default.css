@@ -545,7 +545,7 @@
 {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 33%;  # because here are 3 elements in footer
+    flex-basis: 33%;  /* because here are 3 elements in footer*/
     text-align: center;
 }
 
