@@ -10,3 +10,8 @@ sudo docker run --publish 80:8080 --restart=always -d ep-web
 
 Либо для пересборки контейнера попробуй скрипт
 rebuild-docker.sh
+
+Иконки флагов взяты с
+https://github.com/HatScripts/circle-flags.git
+Другие иконки взяты с
+https://www.iconsdb.com/white-icons/
