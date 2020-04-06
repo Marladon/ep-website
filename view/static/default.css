@@ -57,6 +57,31 @@
 	}
 
 /*********************************************************************************/
+/* EyePoint intro
+/*********************************************************************************/
+
+    #intro-container
+    {
+        display: flex;
+        vertical-align:middle;
+        margin-bottom: 2em;
+        margin-top: 0.50em;
+    }
+
+    #intro-text
+    {
+        color: rgba(0,0,0,0.6);
+        vertical-align:middle;
+    }
+
+    #intro-image
+    {
+        width: 500px;
+        margin-right: 1em;
+        vertical-align:middle;
+    }
+
+/*********************************************************************************/
 /* EyePoint photo with comment style
 /*********************************************************************************/
 
@@ -67,8 +92,9 @@
 	    align-items: center;
 
         overflow: auto;
-        padding: 1em;
+        padding: 0.5em;
         color: rgba(0,0,0,0.6);
+        margin-left: -2em;  /*Because pictures has left white border*/
     }
 
     .epdescription
@@ -342,7 +368,7 @@
 
 	.header-lang-icon
 	{
-	    opacity: 0.8;
+	    opacity: 0.9;
 	    width: 30px;
 	    display: inline;
 	}
@@ -448,18 +474,17 @@
 	#page-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em 2em 0em;
+		padding: 3em 0em 2em 0em;
 		background: #FFF;
 	}
 
 	#page
 	{
-		text-align: center;
+		text-align: left;
 	}
 
 	#page h2
 	{
-		padding-bottom: 0.50em;
 		text-transform: uppercase;
 		font-size: 2.6em;
 		font-weight: 300;
