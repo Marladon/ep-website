@@ -62,23 +62,23 @@
 
     #intro-container
     {
-        display: flex;
-        vertical-align:middle;
         margin-bottom: 2em;
-        margin-top: 0.50em;
+        margin-top: 1.00em;
+        display: inline-block;
     }
 
     #intro-text
     {
         color: rgba(0,0,0,0.6);
-        vertical-align:middle;
     }
 
     #intro-image
     {
-        width: 500px;
+        width: 40vw;
+        min-width: 300px;
+        max-width: 500px;
         margin-right: 1em;
-        vertical-align:middle;
+        float: left;
     }
 
 /*********************************************************************************/
