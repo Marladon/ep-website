@@ -11,6 +11,13 @@ routes = web.RouteTableDef()
 async def index(request):
     return {}
 
+
+@routes.get("/download")
+@aiohttp_jinja2.template("download.html")
+async def download(request):
+    return {}
+
+
 # TODO: use nginx
 routes.static('/static', "view/static")
 

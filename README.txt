@@ -1,5 +1,8 @@
 Проект web-страницы для EyePoint
-Больше информации https://ximc.ru/issues/37198
+Больше информации
+https://ximc.ru/issues/37198
+https://ximc.ru/issues/38120
+https://ximc.ru/issues/36703
 
 Запуск сервера (для тестов):
 python server.py
