@@ -587,7 +587,8 @@
 /*********************************************************************************/
 .footer-icon
 {
-    width: 2em;
+    width: 64px;
+    height: 64px;
     #margin: 0.3em 0.2em 0.7em 0.2em;
     vertical-align: middle;
 }
