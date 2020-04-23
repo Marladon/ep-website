@@ -136,7 +136,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 400;
-		font-size: 0.90em;
+		font-size: 0.70em;
 		color: #FFF;
 		align: right;
 	}
@@ -314,6 +314,7 @@
 		border-top: 1px solid rgba(0,0,0,0.08);
 		display: flex;
 		justify-content: space-between;
+        font-size: 0.80em;
 	}
 
 
@@ -322,9 +323,8 @@
 /*********************************************************************************/
 .footer-icon
 {
-    width: 51px;
-    height: 51px;
-    /*margin: 0.3em 0.2em 0.7em 0.2em;*/
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
 }
 
