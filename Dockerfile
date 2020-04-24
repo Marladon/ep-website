@@ -9,6 +9,8 @@ RUN pip install -r requirements.txt
 
 RUN if [ "$minimize_css" = "yes" ] ; then python minimize.py ; fi
 
+RUN apt-get install gettext
+
 RUN msgfmt locale/en_US/LC_MESSAGES/en.po -o locale/en_US/LC_MESSAGES/en.mo
 
 EXPOSE 8080
