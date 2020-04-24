@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-04-24 20:29+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: data/other.py:4
+msgid "EyePoint – системы для локализации неисправных электронных компонентов на печатных платах, а также для выявления контрафактных, перемаркерованных или поврежденных компонентов в BGA корпусах на основе метода аналогового сигнатурного анализа (АСА). В линейке EyePoint есть автоматические (P10, B10, P10b) и ручные (S1, u2х) системы, а также ОЕМ модуль а2, который может быть встроен в уже используемые системы пользователя. Для работы с модулем поставляется API, которое позволяет без лишних проблем управлять каналом сигнатурного анализа."
+msgstr ""
+
+#: data/other.py:11
+msgid "Технические данные"
+msgstr ""
+
+#: data/products.py:8
+msgid "EyePoint P10"
+msgstr ""
+
+#: data/products.py:9
+msgid "Автоматическая настольная система для поиска неисправных электронных компонентов на печатных платах по методу АСА."
+msgstr ""
+
+#: data/products.py:11 data/products.py:33 data/products.py:75
+#: data/products.py:93
+msgid "Метод тестирования: АСА"
+msgstr ""
+
+#: data/products.py:12 data/products.py:34 data/products.py:57
+#: data/products.py:76 data/products.py:94
+msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
+msgstr ""
+
+#: data/products.py:13 data/products.py:35 data/products.py:58
+msgid "Рабочие напряжения: 1,2, 3,3, 5, 12 В"
+msgstr ""
+
+#: data/products.py:14 data/products.py:36
+msgid "Максимальный размер платы: 280x275 мм"
+msgstr ""
+
+#: data/products.py:15
+msgid "Поддержка корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д"
+msgstr ""
+
+#: data/products.py:16 data/products.py:39
+msgid "Построение карты тестирования до 10 см²/мин"
+msgstr ""
+
+#: data/products.py:17 data/products.py:42
+msgid "Скорость тестирования: 100 точек в мин"
+msgstr ""
+
+#: data/products.py:18 data/products.py:43
+msgid "Точность установки щупа: 30 мкм"
+msgstr ""
+
+#: data/products.py:19 data/products.py:44
+msgid "Время на смену платы: 30 сек"
+msgstr ""
+
+#: data/products.py:20 data/products.py:45
+msgid "Тестирующее напряжение до +/- 12 В"
+msgstr ""
+
+#: data/products.py:21 data/products.py:46
+msgid "Чувствительность по R 2 Ом - 450 кОм"
+msgstr ""
+
+#: data/products.py:22 data/products.py:47
+msgid "Чувствительность по C 300 пФ - 100 мкФ"
+msgstr ""
+
+#: data/products.py:23 data/products.py:48
+msgid "Чувствительность по L от 270 мкГн"
+msgstr ""
+
+#: data/products.py:24 data/products.py:50
+msgid "Габариты и вес: 604х543х473 мм, 50 кг"
+msgstr ""
+
+#: data/products.py:25 data/products.py:51
+msgid "Управляющий ПК: Intel i5 2.8 ГГц, 16 Гб RAM, 256 Гб SSD"
+msgstr ""
+
+#: data/products.py:26 data/products.py:52
+msgid "Электропитание: ~220В, 300 Вт"
+msgstr ""
+
+#: data/products.py:29
+msgid "EyePoint P10b"
+msgstr ""
+
+#: data/products.py:30
+msgid "EyePoint P10b - автоматическая настольная система для поиска неисправных электронных компонентов на печатных платах с опцией выявления контрафактных, перемаркерованных или поврежденных компонентов в BGA корпусах."
+msgstr ""
+
+#: data/products.py:37
+msgid "Поддержка корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
+msgstr ""
+
+#: data/products.py:38
+msgid "Поддержка тестирования корпусов типа BGA"
+msgstr ""
+
+#: data/products.py:40
+msgid "Шаг и количество выводов BGA микросхем: 1,5 - 0,4 мм, 8 - 2500 шт."
+msgstr ""
+
+#: data/products.py:41
+msgid "Расположение выводов: произвольное"
+msgstr ""
+
+#: data/products.py:49
+msgid "Предоставляются подложки для крепления BGA микросхем"
+msgstr ""
+
+#: data/products.py:55
+msgid "EyePoint S2"
+msgstr ""
+
+#: data/products.py:56
+msgid "Ручная версия локализатора неисправных электронных компонентов с сенсорным экраном."
+msgstr ""
+
+#: data/products.py:59 data/products.py:86
+msgid "В зависимости от диапазона измеряемых значений максимальное напряжение до 12 В, максимальный ток до 250 мкА"
+msgstr ""
+
+#: data/products.py:61
+msgid "Габаритные размеры: 205 х 204 х 120 мм"
+msgstr ""
+
+#: data/products.py:62
+msgid "7-ми дюймовый цветной дисплей с функцией touchscreen"
+msgstr ""
+
+#: data/products.py:63 data/products.py:81
+msgid "Регулируемый порог совпадения сигнатур"
+msgstr ""
+
+#: data/products.py:64
+msgid "Внешняя педаль для дополнительного функционала"
+msgstr ""
+
+#: data/products.py:65
+msgid "Экспорт данных в формате данных PNG на внешний Flash накопитель"
+msgstr ""
+
+#: data/products.py:66 data/products.py:82
+msgid "Поддержка режима «План тестирования»"
+msgstr ""
+
+#: data/products.py:67
+msgid "Возможность подключения к ПК по USB (Win, Linux)"
+msgstr ""
+
+#: data/products.py:68
+msgid "Возможность программного управления (C/C++, C#, Python)"
+msgstr ""
+
+#: data/products.py:71
+msgid "EyePoint u2"
+msgstr ""
+
+#: data/products.py:72
+msgid "EyePoint u2 – миниатюрная система для поиска неисправных электронных компонентов на печатных платах методом аналогового сигнатурного анализа ASA. Для работы необходимо подключить EyePoint u2 к компьютеру по USB и начать тестирование в ручном режиме."
+msgstr ""
+
+#: data/products.py:77 data/products.py:95
+msgid "Рабочие напряжения: 1.2, 3.3, 5, 12 В"
+msgstr ""
+
+#: data/products.py:78 data/products.py:96
+msgid "Чувствительность по току: 250 мкА, 2.5 мА, 25 мА"
+msgstr ""
+
+#: data/products.py:79 data/products.py:100
+msgid "Напряжение питания: 5 В"
+msgstr ""
+
+#: data/products.py:80
+msgid "Габаритные размеры: 175 х 90 х 40 мм"
+msgstr ""
+
+#: data/products.py:83
+msgid "Интерфейс связи USB 2.0"
+msgstr ""
+
+#: data/products.py:84
+msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
+msgstr ""
+
+#: data/products.py:85
+msgid "Возможность программного управления: C#/C++, Qt, Python"
+msgstr ""
+
+#: data/products.py:90
+msgid "EyePoint a2"
+msgstr ""
+
+#: data/products.py:91
+msgid "Одноканальный OEM модуль аналогового сигнатурного анализа без корпуса и пользовательского ПО."
+msgstr ""
+
+#: data/products.py:97
+msgid "Интерфейс подключения к ПК: USB 2.0"
+msgstr ""
+
+#: data/products.py:98
+msgid "Возможность программного управления: С#/С++; Python"
+msgstr ""
+
+#: data/products.py:99
+msgid "Габаритные размеры: 60х40х5 мм"
+msgstr ""
+
+#: data/products.py:101
+msgid "Питание от USB разъема"
+msgstr ""
+
