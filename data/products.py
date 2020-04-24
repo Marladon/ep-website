@@ -1,5 +1,5 @@
 from .product import Product
-from .utils import _
+from translator.translator import _
 
 
 products = [

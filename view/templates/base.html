@@ -19,10 +19,10 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<a href="#" accesskey="1" title="" class="header-lang-link">
+				<a href="/ru/" accesskey="1" title="" class="header-lang-link">
 					<img src="/static/ico/ru.svg" class="header-lang-icon" alt="Rus"/>
 				</a>
-				<a href="#" accesskey="2" title="" class="header-lang-link">
+				<a href="/en/" accesskey="2" title="" class="header-lang-link">
 					<img src="/static/ico/gb.svg" class="header-lang-icon" alt="Eng"/>
 				</a>
 			</ul>
@@ -43,7 +43,7 @@
 			<nobr>
 				<img src="/static/ico/map.png" class="footer-icon"/>
 				<div class="footer-multiline">
-					Россия, Москва, 119333<br>ул Фотиевой дом 5, строение 1
+					{{ tr(address) | safe }}
 				</div>
 			</nobr>
 		</div>

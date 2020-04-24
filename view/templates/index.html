@@ -7,7 +7,7 @@
 <div id="intro-container">
 	<img id="intro-image" src="/static/images/S1_lifestyle.jpg"/>
 	<div id="intro-text">
-		{{ intro }}
+		{{ tr(intro) }}
 	</div>
 </div>
 
@@ -17,18 +17,18 @@
         <div class="epmain">
 	<img src="/static/images/{{ product.picture }}" class="epimage">
 	<div class="epdescription">
-		<h3>{{ product.friendly_name }}</h3><br>
-		{{ product.description }}
+		<h3>{{ tr(product.friendly_name) }}</h3><br>
+		{{ tr(product.description) }}
 		<br>
 		<br>
-		{{ technical }}
+		{{ (translatortechnical) }}
 
 		<ul class="epul">
 			{% for tech in product.technical %}
-			<li>{{ tech }}</li>
+			<li>{{ tr(tech) }}</li>
 			{% endfor %}
 		</ul>
-		<a href="/product/{{ product.name }}" class="button">More</a>
+		<a href="/{{ lang }}/product/{{ product.name }}/" class="button">More</a>
 	</div>
 </div>
 
