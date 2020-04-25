@@ -4,3 +4,4 @@ cchardet
 aiohttp_jinja2
 csscompressor
 htmlmin
+jinja2

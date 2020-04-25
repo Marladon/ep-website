@@ -2,120 +2,33 @@
 
 {% block content %}
 
-<h2 >EyePoint S1</h2>
+<h2 >{{ tr(product_name) }}</h2>
 
-<h3 class="download-page-header">Firmware</h3>
+{% for software_name, software in software_types.items() %}
+
+<h3 class="download-page-header">{{ tr(software_friendly_name(software_name)) }}</h3>
 
 <table>
     <tbody>
       <tr>
-        <th>Version</th>
-        <th>Release date</th>
-        <th>Size</th>
-        <th>Link</th>
+        <th>{{ tr(version) }}</th>
+        <th>{{ tr(release_date) }}</th>
+        <th>{{ tr(size) }}</th>
+        <th>{{ tr(link) }}</th>
       </tr>
+      {% for file in software %}
       <tr>
-        <td>1.1.0</td>
-        <td>03.10.2016</td>
-        <td>0.64 Kb</td>
-        <td><a href="/">Download</a></td>
+        <td>{{ file.version }}</td>
+        <td>{{ file.date }}</td>
+        <td>{{ file.size }} Kb</td>
+        <td><a href="{{ file.url }}">{{ tr(download) }}</a></td>
       </tr>
-      <tr>
-        <td>1.1.0</td>
-        <td>03.10.2016</td>
-        <td>0.64 Kb</td>
-        <td><a href="/">Download</a></td>
-      </tr>
-      <tr>
-        <td>1.1.0</td>
-        <td>03.10.2016</td>
-        <td>0.64 Kb</td>
-        <td><a href="/">Download</a></td>
-      </tr>
-      <tr>
-        <td>1.1.0</td>
-        <td>03.10.2016</td>
-        <td>0.64 Kb</td>
-        <td><a href="/">Download</a></td>
-      </tr>
-      <tr>
-        <td>1.1.0</td>
-        <td>03.10.2016</td>
-        <td>0.64 Kb</td>
-        <td><a href="/">Download</a></td>
-      </tr>
-      <tr>
-        <td>1.1.0</td>
-        <td>03.10.2016</td>
-        <td>0.64 Kb</td>
-        <td><a href="/">Download</a></td>
-      </tr>
+      {% endfor %}
 
     </tbody>
 </table>
 
-<h3 class="download-page-header">Software</h3>
 
-<table>
-  <tr>
-    <th>Version</th>
-    <th>Release date</th>
-    <th>Size</th>
-    <th>Link</th>
-  </tr>
-  <tr>
-    <td>2.3.0</td>
-    <td>01.01.2020</td>
-    <td>1.4 Mb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-  <tr>
-    <td>2.3.0</td>
-    <td>01.01.2020</td>
-    <td>1.4 Mb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-  <tr>
-    <td>2.3.0</td>
-    <td>01.01.2020</td>
-    <td>1.4 Mb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-  <tr>
-    <td>2.3.0</td>
-    <td>01.01.2020</td>
-    <td>1.4 Mb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-  <tr>
-    <td>2.3.0</td>
-    <td>01.01.2020</td>
-    <td>1.4 Mb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-  <tr>
-    <td>2.3.0</td>
-    <td>01.01.2020</td>
-    <td>1.4 Mb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-</table>
-
-<h3 class="download-page-header">Driver</h3>
-
-<table>
-  <tr>
-    <th>Version</th>
-    <th>Release date</th>
-    <th>Size</th>
-    <th>Link</th>
-  </tr>
-  <tr>
-    <td>0.0.0</td>
-    <td>01.01.2020</td>
-    <td>12 Kb</td>
-    <td><a href="/">Download</a></td>
-  </tr>
-</table>
+{% endfor %}
 
 {% endblock %}

@@ -305,6 +305,11 @@
 		color: rgba(0,0,0,0.9);
 	}
 
+	.download-page-header
+	{
+	    margin-top: 1em;
+	}
+
 	#page p
 	{
 		color: rgba(0,0,0,0.8);
@@ -337,7 +342,7 @@
 .footer-block
 {
     flex-grow: 0;
-    flex-shrink: 0;
+    flex-shrink: 1;
     flex-basis: 33%;  /* because here are 3 elements in footer*/
     text-align: center;
 }

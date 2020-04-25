@@ -102,3 +102,10 @@ products = [
 ]
 
 assert(all([" " not in p.name for p in products]))
+
+
+def friendly_name(name: str) -> str:
+    for product in products:
+        if product.name == name:
+            return product.friendly_name
+    raise ValueError("No such product " + name)
