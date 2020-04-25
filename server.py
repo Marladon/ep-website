@@ -2,12 +2,13 @@ from aiohttp import web
 import aiohttp_jinja2
 import jinja2
 import asyncio
+import posixpath
 
 from data.products import products, friendly_name
 from data.other import intro, technical, address
 import data.download as download_data
 from data.walker.walk import FileInfo, walk
-from translator.translator import translator
+from translator.translator import translator, all_languages
 
 from typing import Dict, List
 
@@ -24,7 +25,16 @@ def translatable_template(func):
 
         result = await func(request)
 
-        return {"tr": tr, "lang": language, **result}
+        # Link to current page without /ru or /en prefix
+        current_link_nolang = posixpath.join(*request.path.split("/")[2:])
+
+        # Links to ru, en, ... etc versions of current page
+        languages_links = {f"{lang}_link": posixpath.join("/"+lang, current_link_nolang) for lang in all_languages}
+        print(languages_links)
+        return {"tr": tr,
+                "lang": language,
+                **languages_links,
+                **result}
     return handler
 
 
