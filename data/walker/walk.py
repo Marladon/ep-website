@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from datetime import datetime, date
 from typing import Dict, List
 from os import listdir
-from os.path import isdir, basename, join as join_path, getmtime, getsize
+from os.path import isdir, basename, join as join_path, getmtime, getsize, sep
 from distutils.version import LooseVersion
 
 
@@ -26,10 +26,13 @@ class FileInfo:
         except (ValueError, IndexError):
             version = LooseVersion()
 
+        # convert /foo/bar/spam/download/EyePointS1/firmware to download/EyePointS1/firmware
+        path_short = join_path(*path.split(sep)[-3:])
+
         return FileInfo(version,
                         datetime.fromtimestamp(getmtime(path)).date(),
                         getsize(path),
-                        join_path(url_prefix, path))
+                        join_path(url_prefix, path_short))
 
 
 def _walk_software(path: str, url_prefix: str) -> List[FileInfo]:
@@ -83,5 +86,5 @@ def walk(path: str, url_prefix: str) -> Dict[str, Dict[str, List[FileInfo]]]:
 
 if __name__ == '__main__':
     #  Run example
-    result = walk("files", "/static")
+    result = walk("view/static/download", "/static/download")
     print(result)

@@ -30,7 +30,6 @@ def translatable_template(func):
 
         # Links to ru, en, ... etc versions of current page
         languages_links = {f"{lang}_link": posixpath.join("/"+lang, current_link_nolang) for lang in all_languages}
-        print(languages_links)
         return {"tr": tr,
                 "lang": language,
                 **languages_links,
@@ -99,7 +98,7 @@ if __name__ == "__main__":
     loop.run_until_complete(runner.setup())
     site = web.TCPSite(runner)
     loop.run_until_complete(site.start())
-    files = walk("files", "/static")  # run once before server run
-    loop.create_task(walk_periodic("files", "/static"))  # periodic run
+    files = walk("view/static/download", "/static/download")  # run once before server run
+    loop.create_task(walk_periodic("view/static/download", "/static/download"))  # periodic run
 
     loop.run_forever()
