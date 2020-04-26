@@ -2,3 +2,6 @@ venv
 .idea
 notes.txt
 /locale/en_US/LC_MESSAGES/en.mo
+/view/static/download/EyePoint_P10/
+/view/static/download/EyePoint_P10b/
+/view/static/download/EyePoint_S2/
