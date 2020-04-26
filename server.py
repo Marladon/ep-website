@@ -82,7 +82,7 @@ routes.static('/static', "view/static")
 async def walk_periodic(path: str, url_prefix: str):
     global files
     while True:
-        await asyncio.sleep(3600)  # update every hour
+        await asyncio.sleep(300)  # Update every 5 minutes
         files = walk(path, url_prefix)
 
 
