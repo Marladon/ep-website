@@ -8,7 +8,7 @@ RUN pip install -r requirements.txt && \
     apt-get update && \
     apt-get install -y gettext && \
     apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/* && \
-    msgfmt locale/en_US/LC_MESSAGES/en.po -o locale/en_US/LC_MESSAGES/en.mo
+    msgfmt locale/en_US/LC_MESSAGES/en.po -o locale/en_US/LC_MESSAGES/en.mo --use-fuzzy
 
 EXPOSE 8080
 cmd ["python", "server.py"]
