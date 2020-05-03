@@ -1,5 +1,6 @@
 from .product import Product
 from translator.translator import _
+from functools import lru_cache
 
 
 products = [
@@ -24,7 +25,7 @@ products = [
                        _("Электропитание: ~220В, 300 Вт")
                        ]
             ),
-    Product(name="EyePoint_P10b", friendly_name=_("EyePoint P10b"), picture="P10.png",
+    Product(name="EyePoint_P10b", friendly_name=_("EyePoint P10b"), picture="P10b.png",
             description=_("EyePoint P10b - автоматическая настольная система для поиска неисправных электронных "
                           "компонентов на печатных платах с опцией выявления контрафактных, перемаркерованных или "
                           "поврежденных компонентов в BGA корпусах."),
@@ -50,7 +51,7 @@ products = [
                        _("Электропитание: ~220В, 300 Вт")
                        ]
             ),
-    Product(name="EyePoint_S2", friendly_name=_("EyePoint S2"), picture="P10.png",
+    Product(name="EyePoint_S2", friendly_name=_("EyePoint S2"), picture="S2.png",
             description=_("Ручная версия локализатора неисправных электронных компонентов с сенсорным экраном."),
             technical=[_("Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"),
                        _("Рабочие напряжения: 1,2, 3,3, 5, 12 В"),
@@ -66,7 +67,7 @@ products = [
                        _("Возможность программного управления (C/C++, C#, Python)")
                        ]
             ),
-    Product(name="EyePoint_u2", friendly_name=_("EyePoint u2"), picture="P10.png",
+    Product(name="EyePoint_u2", friendly_name=_("EyePoint u2"), picture="u2.png",
             description=_("EyePoint u2 – миниатюрная система для поиска неисправных электронных компонентов на "
                           "печатных платах методом аналогового сигнатурного анализа ASA. Для работы необходимо "
                           "подключить EyePoint u2 к компьютеру по USB и начать тестирование в ручном режиме."),
@@ -85,7 +86,7 @@ products = [
                          "максимальный ток до 250 мкА")
                        ]
             ),
-    Product(name="EyePoint_a2", friendly_name=_("EyePoint a2"), picture="P10.png",
+    Product(name="EyePoint_a2", friendly_name=_("EyePoint a2"), picture="a2.png",
             description=_("Одноканальный OEM модуль аналогового сигнатурного анализа без корпуса и пользовательского "
                           "ПО."),
             technical=[_("Метод тестирования: АСА"),
@@ -104,6 +105,7 @@ products = [
 assert(all([" " not in p.name for p in products]))
 
 
+@lru_cache(maxsize=128)
 def friendly_name(name: str) -> str:
     for product in products:
         if product.name == name:
