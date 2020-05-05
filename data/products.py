@@ -1,9 +1,19 @@
-from .product import Product
-from translator.translator import _
 from functools import lru_cache
+from dataclasses import dataclass
+from typing import List
+from translator.translator import _
 
 
-products = [
+@dataclass
+class Product:
+    name: str
+    friendly_name: str
+    description: str
+    picture: str
+    technical: List[str]
+
+
+products = (
     Product(name="EyePoint_P10", friendly_name=_("EyePoint P10"), picture="P10.png",
             description=_("Автоматическая настольная система для поиска неисправных электронных компонентов на "
                           "печатных платах по методу АСА."),
@@ -100,7 +110,7 @@ products = [
                        _("Питание от USB разъема")
                        ]
             )
-]
+)
 
 assert(all([" " not in p.name for p in products]))
 

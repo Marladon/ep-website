@@ -65,13 +65,13 @@ async def index(request):
 async def download(request):
     product = request.match_info["product"]
     return {"product_name": friendly_name(product),
-            "software_types": files[product],
+            "all_software": files[product],
             "version": download_data.version,
             "release_date": download_data.release_date,
             "size": download_data.size,
             "link": download_data.link,
             "download": download_data.download,
-            "software_friendly_name": download_data.software_friendly_name
+            "software_type": download_data.software_category_by_name
             }
 
 

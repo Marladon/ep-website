@@ -4,9 +4,12 @@
 
 <h2 >{{ tr(product_name) }}</h2>
 
-{% for software_name, software in software_types.items() %}
+{% for software_name, software in all_software.items() %}
 
-<h3 class="download-page-header">{{ tr(software_friendly_name(software_name)) }}</h3>
+<div class="download-header-block">
+  <img src="/static/ico/{{ software_type(software_name).icon }}">
+  <h3 class="download-h3">  {{ tr(software_type(software_name).friendly_name) }}</h3>
+</div>
 
 <table>
     <tbody>
