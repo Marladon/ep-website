@@ -27,7 +27,9 @@
 			<li>{{ tr(tech) }}</li>
 			{% endfor %}
 		</ul>
-		<a href="product/{{ product.name }}/" class="button">More</a>
+		<div class="button-container">
+			<a href="product/{{ product.name }}/" class="button">{{ tr(more) }}</a>
+		</div>
 	</div>
 </div>
 

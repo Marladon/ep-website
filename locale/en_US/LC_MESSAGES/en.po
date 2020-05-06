@@ -320,3 +320,7 @@ msgstr "Dimensions: 60х40х5 mm"
 #: data/products.py:99
 msgid "Питание от USB разъема"
 msgstr "USB powered"
+
+#: data/other.py:15
+msgid "Подробнее"
+msgstr "More"

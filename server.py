@@ -5,7 +5,7 @@ import asyncio
 import posixpath
 
 from data.products import products, friendly_name
-from data.other import intro, technical, address
+from data.other import intro, technical, address, more
 import data.download as download_data
 from data.walker.walk import FileInfo, walk
 from translator.translator import translator, all_languages
@@ -56,6 +56,7 @@ async def index(request):
     return {"intro": intro,
             "products": products,
             "technical": technical,
+            "more": more
             }
 
 

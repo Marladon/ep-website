@@ -106,6 +106,7 @@
         flex-shrink: 0;
         flex-basis: 17.75vw;
         max-width: 300px;
+        min-width: 130px;
     }
 
 	.image
@@ -128,7 +129,6 @@
 		display: inline-block;
 		padding: 1em 2em 1em 2em;
 		background: #458f0b;
-		border-radius: 30px;
 		letter-spacing: 0.20em;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -136,6 +136,11 @@
 		font-size: 0.70em;
 		color: #FFF;
 		align: right;
+	}
+
+	.button-container
+	{
+	    text-align: right;
 	}
 
 	.button:before
