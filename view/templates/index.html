@@ -18,11 +18,13 @@
 	<img src="/static/images/{{ product.picture }}" class="epimage">
 	<div class="epdescription">
 		<h3 class="index-h3">{{ tr(product.friendly_name) }}</h3><br>
-		{{ tr(product.description) }}
+
+		<span>{{ tr(product.description) }}</span>
+
 		<br>
 		<br>
 
-		<ul class="epul">
+		<ul>
 			{% for tech in product.technical %}
 			<li>{{ tr(tech) }}</li>
 			{% endfor %}

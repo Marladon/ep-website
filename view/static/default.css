@@ -60,6 +60,7 @@
     #intro-text
     {
         color: rgba(0,0,0,0.6);
+        text-align: justify;
     }
 
     #intro-image
@@ -91,8 +92,9 @@
     {
         flex-grow: 1;
         flex-shrink: 1.5;
-        text-align: left;
+        text-align: justify;
     }
+
 
 
 
@@ -305,6 +307,7 @@
         margin-left: 0;
         margin-right: 0;
         padding-left: 40px;
+        text-align: left;
 	}
 
 	.index-h3
