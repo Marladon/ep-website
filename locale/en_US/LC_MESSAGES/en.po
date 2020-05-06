@@ -311,7 +311,7 @@ msgstr "USB 2.0 communication interface"
 
 #: data/products.py:96
 msgid "Возможность программного управления: С#/С++; Python"
-msgstr "Возможность программного управления: C#/C++, Python"
+msgstr "Possibility of program management: C#/C++, Python"
 
 #: data/products.py:97
 msgid "Габаритные размеры: 60х40х5 мм"
