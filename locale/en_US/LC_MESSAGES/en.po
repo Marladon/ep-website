@@ -78,7 +78,7 @@ msgid "Технические данные"
 msgstr "Technical data"
 
 #: data/other.py:13
-msgid "Россия, Москва, 119333<br>ул Фотиевой дом 5, строение 1"
+msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
 msgstr "Russia, Moscow, 119333<br>Fotieva street 5, build 1"
 
 #: data/products.py:6
