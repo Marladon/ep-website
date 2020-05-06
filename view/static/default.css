@@ -217,6 +217,11 @@
 /* Menu                                                                          */
 /*********************************************************************************/
 
+    .product-link {
+        color: inherit;
+        text-decoration: none;
+    }
+
 	#menu
 	{
 		position: absolute;

@@ -14,21 +14,20 @@
 <div style="clear:both;"></div>
 
 {% for product in products %}
-        <div class="epmain">
+<div class="epmain">
 	<img src="/static/images/{{ product.picture }}" class="epimage">
 	<div class="epdescription">
 		<h3 class="index-h3">{{ tr(product.friendly_name) }}</h3><br>
 		{{ tr(product.description) }}
 		<br>
 		<br>
-		{{ (translatortechnical) }}
 
 		<ul class="epul">
 			{% for tech in product.technical %}
 			<li>{{ tr(tech) }}</li>
 			{% endfor %}
 		</ul>
-		<a href="/{{ lang }}/product/{{ product.name }}/" class="button">More</a>
+		<a href="product/{{ product.name }}/" class="button">More</a>
 	</div>
 </div>
 
