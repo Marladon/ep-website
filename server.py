@@ -3,6 +3,8 @@ import aiohttp_jinja2
 import jinja2
 import asyncio
 import posixpath
+import ssl
+from os.path import isfile
 
 from data.products import products, friendly_name
 from data.other import intro, technical, address, more
@@ -10,7 +12,7 @@ import data.download as download_data
 from data.walker.walk import FileInfo, walk
 from translator.translator import translator, all_languages
 
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 files: Dict[str, Dict[str, List[FileInfo]]] = {}  # Download page files, must be initialized
 
@@ -83,23 +85,47 @@ routes.static('/static', "view/static")
 async def walk_periodic(path: str, url_prefix: str):
     global files
     while True:
-        await asyncio.sleep(300)  # Update every 5 minutes
         files = walk(path, url_prefix)
+        await asyncio.sleep(300)  # Update every 5 minutes
 
 
-app = web.Application()
-aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('view/templates'))
+def _app_factory() -> web.Application:
+    app = web.Application()
+    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('view/templates'))
 
-app.router.add_routes(routes)
+    app.router.add_routes(routes)
+
+    return app
+
+
+async def _server_factory(keyfile: Optional[str] = None, certfile: Optional[str] = None) -> web.TCPSite:
+    app = _app_factory()
+    runner = web.AppRunner(app)
+    await runner.setup()
+
+    ssl_ctx = None
+    if keyfile or certfile:
+        ssl_ctx = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+        ssl_ctx.load_cert_chain(certfile=certfile, keyfile=keyfile)
+
+    site = web.TCPSite(runner, ssl_context=ssl_ctx)
+    return site
+
+
+async def main():
+    walker_coro = walk_periodic("view/static/download", "/static/download")  # periodic run
+    asyncio.create_task(walker_coro)
+
+    http_server_coro = (await _server_factory()).start()
+    asyncio.create_task(http_server_coro)
+
+    cert, key = "fullchain.pem", "privkey.pem"
+    if isfile(cert) and isfile(key):
+        https_server_coro = (await _server_factory(keyfile=key, certfile=cert)).start()
+        asyncio.create_task(https_server_coro)
+
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
-
-    runner = web.AppRunner(app)
-    loop.run_until_complete(runner.setup())
-    site = web.TCPSite(runner)
-    loop.run_until_complete(site.start())
-    files = walk("view/static/download", "/static/download")  # run once before server run
-    loop.create_task(walk_periodic("view/static/download", "/static/download"))  # periodic run
-
+    loop.run_until_complete(main())
     loop.run_forever()

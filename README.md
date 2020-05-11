@@ -30,7 +30,7 @@ cd ~/epwebsite/
 sudo docker create --mount source=download,destination=/app/view/static/download --name unpack busybox true
 sudo docker run --rm --volumes-from unpack -v $(pwd)/sample:/backup busybox tar xvf /backup/download_volume.tar
 ```
-А именно: мы создаём(находим, если ранее всуществовал) volume с именем download, контейнер с именем unpack для 
+А именно: мы создаём(находим, если ранее существовал) volume с именем download, контейнер с именем unpack для 
 распаковки архива и указываем путь внутри нового контейнера /app/view/static/download, который будет использоваться 
 и в основном контейнере. В приложенном архиве пути ведут именно туда - это важно.
 Далее мы запускаем временный контейнер, который подключит volume download и указываем тот же путь внутри 
@@ -52,11 +52,16 @@ docker volume inspect download
 ```
 По этому пути должны были появиться файлы.
 
+Для поддержки HTTPS нужно положить файлы сертификата   
+fullchain.pem (сертификат)  
+fullchain.pem (приватный ключ сертификата)  
+в папку с проектом (там где Dockerfile). Без этих файлов рядом сайт будет работать без поддержки HTTPS  
+
 Внутри папки с исходным кодом лежит Docker container. Теперь, когда есть docker volume с файлами, можно собрать и 
 запустить контейнер: 
 ```bash
 sudo docker build . -t epw
-sudo docker run --publish 80:8080 --restart=always -d --mount source=download,target=/app/view/static/download epw
+docker run --name epw --publish 80:8080 --publish 443:8443 --restart=always -d --mount source=download,target=/app/view/static/download epw
 ```
 
 Для тестов, без Docker, сайт можно просто запустить:
