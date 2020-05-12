@@ -4,13 +4,14 @@ from typing import Dict, List
 from os import listdir
 from os.path import isdir, basename, join as join_path, getmtime, getsize, sep
 from distutils.version import LooseVersion
+from humanize import naturalsize
 
 
 @dataclass
 class FileInfo:
     version: LooseVersion
     date: date
-    size: int
+    size: str
     link: str
 
     @classmethod
@@ -31,7 +32,7 @@ class FileInfo:
 
         return FileInfo(version,
                         datetime.fromtimestamp(getmtime(path)).date(),
-                        getsize(path),
+                        naturalsize(getsize(path)),
                         join_path(url_prefix, path_short))
 
 
