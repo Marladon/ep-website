@@ -32,7 +32,7 @@ class FileInfo:
 
         return FileInfo(version,
                         datetime.fromtimestamp(getmtime(path)).date(),
-                        naturalsize(getsize(path)),
+                        naturalsize(getsize(path), binary=True),
                         join_path(url_prefix, path_short))
 
 
