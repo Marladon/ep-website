@@ -7,7 +7,7 @@ import ssl
 from os.path import isfile
 
 from data.products import products, friendly_name
-from data.other import intro, technical, address, more
+from data.other import intro, technical, address, more, epc
 import data.download as download_data
 from data.walker.walk import FileInfo, walk
 from translator.translator import translator, all_languages
@@ -42,7 +42,9 @@ def translatable_template(func):
 def base_template(func):
     async def handler(request):
         result = await func(request)
-        return {"address": address, **result}
+        return {"address": address,
+                "epc": epc,
+                **result}
     return translatable_template(handler)
 
 

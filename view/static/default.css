@@ -11,7 +11,7 @@
 		font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
 		font-size: 12pt;
 		font-weight: 300;
-		color: rgba(255,255,255,0.6);
+		color: rgba(255,255,255,0.8);
 	}
 
 
@@ -368,6 +368,12 @@
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 33%;  /* because here are 3 elements in footer*/
+    text-align: center;
+}
+
+#footer-epc-block
+{
+    margin-bottom: 0.4em;
     text-align: center;
 }
 
