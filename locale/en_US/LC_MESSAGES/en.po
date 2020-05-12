@@ -85,7 +85,7 @@ msgstr "More"
 
 #: data/other.py:17
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
-msgstr "Center for Engineering Physics, MSU"
+msgstr "Engineering Physics Center, MSU"
 
 #: data/products.py:17
 msgid "EyePoint P10"
