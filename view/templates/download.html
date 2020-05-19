@@ -2,7 +2,24 @@
 
 {% block content %}
 
-<h2 >{{ tr(product_name) }}</h2>
+<h3 class="index-h3">{{ tr(product.friendly_name) }}</h3>
+
+<div class="epmain" id="download-page-intro">
+	<img src="/static/images/{{ product.picture }}" class="epimage">
+	<div class="epdescription">
+
+		<span>{{ tr(product.description) }}</span>
+
+        <br>
+        <br>
+
+        <span>{{ tr(product.extended_description) }}</span>
+
+		<br>
+		<br>
+	</div>
+</div>
+
 
 {% for software_name, software in all_software.items() %}
 

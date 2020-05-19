@@ -6,7 +6,7 @@ import posixpath
 import ssl
 from os.path import isfile
 
-from data.products import products, friendly_name
+from data.products import products, product_by_name
 from data.other import intro, technical, address, more, epc
 import data.download as download_data
 from data.walker.walk import FileInfo, walk
@@ -68,9 +68,10 @@ async def index(request):
 @aiohttp_jinja2.template("download.html")
 @base_template
 async def download(request):
-    product = request.match_info["product"]
-    return {"product_name": friendly_name(product),
-            "all_software": files[product],
+    product = product_by_name(request.match_info["product"])
+
+    return {"product": product,
+            "all_software": files[product.name],
             "version": download_data.version,
             "release_date": download_data.release_date,
             "size": download_data.size,

@@ -334,6 +334,12 @@
 	    margin-left: 0.5em;
 	}
 
+	#download-page-intro
+	{
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	}
+
 	#page p
 	{
 		color: rgba(0,0,0,0.8);
