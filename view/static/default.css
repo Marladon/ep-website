@@ -92,6 +92,7 @@
         flex-grow: 1;
         flex-shrink: 1.5;
         text-align: justify;
+        min-width: 400px;
     }
 
 
