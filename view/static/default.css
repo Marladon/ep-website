@@ -40,10 +40,10 @@
 
 	.container
 	{
-		/*overflow: hidden;*/
+		overflow: hidden;
 		margin: 0em auto;
 		width: 70%;
-		min-width: 700px;
+		min-width: 880px;
 	}
 
 /*********************************************************************************/
@@ -72,6 +72,36 @@
     }
 
 /*********************************************************************************/
+/* Hilight
+/*********************************************************************************/
+
+    .hilight
+    {
+        background-image: url(/static/images/highlight.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 150px;
+        height: 99px;
+        color: rgb(132, 168, 105);
+        float: left;
+        margin: 0px 4px 0px 4px;
+        text-align: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 10px;
+        min-width: 150px
+    }
+
+    .hilight-container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+/*********************************************************************************/
 /* EyePoint photo with comment style
 /*********************************************************************************/
 
@@ -93,6 +123,7 @@
         flex-shrink: 0;
         text-align: justify;
         width: 60%;
+        overflow: hidden;
     }
 
 
