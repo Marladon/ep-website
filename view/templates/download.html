@@ -47,7 +47,7 @@
       <tr>
         <td>{{ file.version }}</td>
         <td>{{ file.date }}</td>
-        <td>{{ file.size }}</td>
+        <td>{{ file.size|filesizeformat }}</td>
         <td><a href="{{ file.link }}">{{ tr(download) }}</a></td>
       </tr>
       {% endfor %}
