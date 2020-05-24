@@ -5,19 +5,16 @@
 <h3 class="index-h3">{{ tr(product.friendly_name) }}</h3>
 
 <div class="epmain" id="download-page-intro">
-	<img src="/static/images/{{ product.picture }}" class="epimage">
+    <div class="epimage">
+        <img src="/static/images/{{ product.picture }}">
+    </div>
 	<div class="epdescription">
-
 		<span>{{ tr(product.description) }}</span>
-
         <br>
         <br>
-
         <span>{{ tr(product.extended_description) }}</span>
-
 		<br>
 		<br>
-
         <div class="hilight-container">
             {% for hilight in product.hilights %}
                 <div class="hilight">{{hilight}}</div>

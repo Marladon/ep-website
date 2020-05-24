@@ -15,9 +15,12 @@
 
 {% for product in products %}
 <div class="epmain">
-	<img src="/static/images/{{ product.picture }}" class="epimage">
+	<a href="product/{{ product.name }}/" class="epimage">
+		<img src="/static/images/{{ product.picture }}">
+	</a>
 	<div class="epdescription">
-		<h3 class="index-h3">{{ tr(product.friendly_name) }}</h3><br>
+		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
+		<br>
 
 		<span>{{ tr(product.description) }}</span>
 
