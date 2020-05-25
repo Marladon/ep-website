@@ -142,16 +142,10 @@
         display: contents;
     }
 
-	.image
-	{
-		display: inline-block;
-	}
-
-	.image img
-	{
-		display: block;
-		width: 100%;
-	}
+    .epimage img
+    {
+        width: inherit;
+    }
 
 /*********************************************************************************/
 /* Button Style                                                                  */
