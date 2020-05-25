@@ -67,7 +67,7 @@ msgstr ""
 "PCB, as well as for identifying counterfeit, remarked or damaged components "
 "in BGA packages based on the analog signature analysis (ASA) method. The "
 "<b>EyePoint</b> products line includes automatic <b>(P10, B10, P10b)</b> "
-"systems, manual <b>(S1, u2/b>x) systems and OEM module <b> A2</b> with open "
+"systems, manual <b>(S1, u2</b>x) systems and OEM module <b> A2</b> with open "
 "API, which can be built into existing user systems."
 
 #: data/other.py:11
