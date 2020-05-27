@@ -4,6 +4,7 @@ from typing import Dict, List
 from os import listdir
 from os.path import isdir, basename, join as join_path, getmtime, getsize, sep
 from distutils.version import LooseVersion
+from re import findall
 
 
 @dataclass
@@ -21,10 +22,10 @@ class FileInfo:
         :param path: path to file (relative!)
         :return: "FileInfo"
         """
-        try:
-            version = LooseVersion(basename(path).split("-")[1])
-        except (ValueError, IndexError):
-            version = LooseVersion()
+        version_matches = findall(r"\d+\.\d+\.\d+", basename(path))
+        if not version_matches:
+            raise ValueError("Unable to find file version")
+        version = LooseVersion(version_matches[0])
 
         # convert /foo/bar/spam/download/EyePointS1/firmware to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
@@ -41,7 +42,10 @@ def _walk_software(path: str, url_prefix: str) -> List[FileInfo]:
         fullpath = join_path(path, file)
         if isdir(file):
             continue
-        result.append(FileInfo.fromfile(fullpath, url_prefix))
+        try:
+            result.append(FileInfo.fromfile(fullpath, url_prefix))
+        except ValueError:
+            continue  # Ignore file with bad version (or other value errors?)
     return sorted(result, key=lambda f: f.version, reverse=True)
 
 
