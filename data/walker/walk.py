@@ -13,6 +13,7 @@ class FileInfo:
     date: date
     size: int
     link: str
+    basename: str
 
     @classmethod
     def fromfile(cls, path: str, url_prefix: str) -> "FileInfo":
@@ -33,7 +34,8 @@ class FileInfo:
         return FileInfo(version,
                         datetime.fromtimestamp(getmtime(path)).date(),
                         getsize(path),
-                        join_path(url_prefix, path_short))
+                        join_path(url_prefix, path_short),
+                        basename=basename(path))
 
 
 def _walk_software(path: str, url_prefix: str) -> List[FileInfo]:

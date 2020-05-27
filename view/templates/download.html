@@ -42,10 +42,10 @@
       </tr>
       {% for file in software %}
       <tr>
-        <td>{{ file.version }}</td>
-        <td>{{ file.date }}</td>
-        <td>{{ file.size|filesizeformat }}</td>
-        <td><a href="{{ file.link }}">{{ tr(download) }}</a></td>
+        <td class="td1">{{ file.version }}</td>
+        <td class="td2">{{ file.date }}</td>
+        <td class="td3">{{ file.size|filesizeformat }}</td>
+        <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
       </tr>
       {% endfor %}
 

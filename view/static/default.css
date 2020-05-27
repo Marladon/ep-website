@@ -467,8 +467,20 @@ td, th {
   padding: 8px;
 }
 
-td {
-    width: 25%;  /* because here are 4 columns */
+.td1 {
+    width: 22%;
+}
+
+.td2 {
+    width: 22%;
+}
+
+.td3 {
+    width: 22%;
+}
+
+.td4 {
+    width: 34%;
 }
 
 tr:nth-child(even) {
