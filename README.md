@@ -52,11 +52,25 @@ docker volume inspect download
 ```
 По этому пути должны были появиться файлы.
 
+### Поддержка HTTPS
 Для поддержки HTTPS нужно положить файлы сертификата   
 fullchain.pem (сертификат)  
-fullchain.pem (приватный ключ сертификата)  
+privkey.pem (приватный ключ сертификата)  
 в папку с проектом (там где Dockerfile). Без этих файлов рядом сайт будет работать без поддержки HTTPS  
+Подразумевается использовать letsencrypt. Пока вручную. Это можно сделать так:
+```
+sudo apt-get install certbot
+docker container stop epw
+sudo certbot certonly --standalone
+cp /etc/letsencrypt/live/epwebtest.kea.su/fullchain.pem /root/epwebsite/
+cp /etc/letsencrypt/live/epwebtest.kea.su/privkey.pem /root/epwebsite/
+bash scripts/rebuild-docker.sh
+```
+То есть поставить на хост специального бота, остановить контейнер, чтобы освободить порт 80, запустить сервер
+сертификации в интерактивном режиме. Скопировать полученные сертификаты и ключи, пересобрать контейнер.
+В интерактивном вводе спросят домен, который должен к этому моменту уже разрешаться в IP.
 
+### Запуск
 Внутри папки с исходным кодом лежит Docker container. Теперь, когда есть docker volume с файлами, можно собрать и 
 запустить контейнер: 
 ```bash
