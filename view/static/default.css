@@ -52,8 +52,8 @@
 
     #intro-container
     {
-        margin-bottom: 2em;
-        margin-top: 1.00em;
+        margin-bottom: 1em;
+        margin-top: 1em;
         display: inline-block;
     }
 
@@ -113,8 +113,8 @@
 
         overflow: auto;
         color: rgba(0,0,0,0.6);
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     .epdescription
@@ -321,7 +321,7 @@
 	#page-wrapper
 	{
 		/*overflow: hidden;*/
-		padding: 3em 0em 2em 0em;
+		padding: 3em 0em 1em 0em;
 		background: #FFF;
 		min-height: 85%;
 	}
