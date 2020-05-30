@@ -31,6 +31,11 @@
   <img src="/static/ico/{{ software_type(software_name).icon }}">
   <h3 class="download-h3">  {{ tr(software_type(software_name).friendly_name) }}</h3>
 </div>
+{% if software_type(software_name).description %}
+<div class="download-text">
+    {{ tr(software_type(software_name).description) }}
+</div>
+{% endif %}
 
 <table>
     <tbody>

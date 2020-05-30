@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from functools import lru_cache
+from typing import Optional
 from translator.translator import _
 
 
@@ -7,14 +8,18 @@ from translator.translator import _
 class SoftwareCategory:
     name: str
     friendly_name: str
-    # description: str
     icon: str
+    description: Optional[str] = None
 
 
-categories = (SoftwareCategory(name="documentation", friendly_name=_("Документация"), icon="doc.png"),
-              SoftwareCategory(name="driver", friendly_name=_("Драйвер"), icon="driver.png"),
-              SoftwareCategory(name="firmware", friendly_name=_("Прошивка"), icon="firmware.png"),
-              SoftwareCategory(name="software", friendly_name=_("Софт"), icon="software.png"))
+categories = (SoftwareCategory(name="documentation", friendly_name=_("Документация"), icon="doc.png",
+                               description=_("Документация к продукту")),
+              SoftwareCategory(name="driver", friendly_name=_("Драйвер"), icon="driver.png",
+                               description=_("Драйвера для разных операционных систем")),
+              SoftwareCategory(name="firmware", friendly_name=_("Прошивка"), icon="firmware.png",
+                               description=_("Файлы прошивок для загрузки в устройство")),
+              SoftwareCategory(name="software", friendly_name=_("Софт"), icon="software.png",
+                               description=_("Программное обеспечение для ПК")))
 
 
 @lru_cache(maxsize=128)

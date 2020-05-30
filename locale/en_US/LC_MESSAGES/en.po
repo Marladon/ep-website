@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-25 02:18+0300\n"
-"PO-Revision-Date: 2020-05-29 09:51+0300\n"
+"POT-Creation-Date: 2020-05-30 21:11+0300\n"
+"PO-Revision-Date: 2020-05-30 21:13+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,41 +14,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 1.8.11\n"
 
-#: data/download.py:14
+#: data/download.py:15
 msgid "Документация"
 msgstr "Documentation"
 
-#: data/download.py:15
+#: data/download.py:16
+msgid "Документация к продукту"
+msgstr "Product documentation"
+
+#: data/download.py:17
 msgid "Драйвер"
 msgstr "Driver"
 
-#: data/download.py:16
+#: data/download.py:18
+msgid "Драйвера для разных операционных систем"
+msgstr "Drivers for different operation systems"
+
+#: data/download.py:19
 msgid "Прошивка"
 msgstr "Firmware"
 
-#: data/download.py:17
+#: data/download.py:20
+msgid "Файлы прошивок для загрузки в устройство"
+msgstr "Firmware files for device"
+
+#: data/download.py:21
 msgid "Софт"
 msgstr "Software"
 
-#: data/download.py:28
+#: data/download.py:22
+msgid "Программное обеспечение для ПК"
+msgstr "Software for PC"
+
+#: data/download.py:33
 msgid "Версия"
 msgstr "Version"
 
-#: data/download.py:29
+#: data/download.py:34
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: data/download.py:30
+#: data/download.py:35
 msgid "Размер"
 msgstr "Size"
 
-#: data/download.py:31
+#: data/download.py:36
 msgid "Ссылка"
 msgstr "Link"
 
-#: data/download.py:32
+#: data/download.py:37
 msgid "Скачать"
 msgstr "Download"
 
