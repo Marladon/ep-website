@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2020-05-25 02:18+0300\n"
-"PO-Revision-Date: 2020-05-27 22:32+0300\n"
+"PO-Revision-Date: 2020-05-29 09:51+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/download.py:14
 msgid "Документация"
@@ -112,13 +112,12 @@ msgid "Прост в использовании"
 msgstr "Easy to use"
 
 #: data/products.py:26
-#, fuzzy
 msgid "Снизит нагрузку на инженера"
-msgstr "Simplify the engineer life"
+msgstr "Simplify the engineer's life"
 
 #: data/products.py:27
 msgid "Не повредит плату"
-msgstr "Don't demage the PCB"
+msgstr "Don't damage the PCB"
 
 #: data/products.py:28 data/products.py:56 data/products.py:112
 #: data/products.py:140
@@ -264,7 +263,7 @@ msgstr "Test signal frequency range: 1 Hz - 100 kHz"
 
 #: data/products.py:86
 msgid "Доступен план тестирования "
-msgstr "\"Test Plan\" mode: available"
+msgstr "\"Test Plan\" mode: available "
 
 #: data/products.py:89 data/products.py:123
 msgid ""
