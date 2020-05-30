@@ -35,17 +35,17 @@
 <table>
     <tbody>
       <tr>
+        <th>{{ tr(link) }}</th>
         <th>{{ tr(version) }}</th>
         <th>{{ tr(release_date) }}</th>
         <th>{{ tr(size) }}</th>
-        <th>{{ tr(link) }}</th>
       </tr>
       {% for file in software %}
       <tr>
+        <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
         <td class="td1">{{ file.version }}</td>
         <td class="td2">{{ file.date }}</td>
         <td class="td3">{{ file.size|filesizeformat }}</td>
-        <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
       </tr>
       {% endfor %}
 
