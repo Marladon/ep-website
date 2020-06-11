@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2020-05-25 02:18+0300\n"
-"PO-Revision-Date: 2020-05-25 02:22+0300\n"
+"PO-Revision-Date: 2020-06-01 15:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.3\n"
 
 #: data/download.py:14
 msgid "Документация"
@@ -67,17 +67,16 @@ msgstr ""
 "PCB, as well as for identifying counterfeit, remarked or damaged components "
 "in BGA packages based on the analog signature analysis (ASA) method. The "
 "<b>EyePoint</b> products line includes automatic <b>(P10, B10, P10b)</b> "
-"systems, manual <b>(S1, u2</b>x) systems and OEM module <b> A2</b> with open "
+"systems, manual <b>(S1, u2</b>x) systems and OEM module <b> a2</b> with open "
 "API, which can be built into existing user systems."
 
 #: data/other.py:11
 msgid "Технические данные"
-msgstr "Technical data"
+msgstr "Specifications"
 
 #: data/other.py:13
-#, fuzzy
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
-msgstr "Russia, Moscow, 119333<br>Fotieva street 5, bldg 1"
+msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
 #: data/other.py:15
 msgid "Подробнее"
@@ -85,7 +84,7 @@ msgstr "More"
 
 #: data/other.py:17
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
-msgstr "Engineering Physics Center, MSU"
+msgstr "Engineering Physics Center MSU"
 
 #: data/products.py:19
 msgid "EyePoint P10"
@@ -105,18 +104,20 @@ msgid ""
 "выводов компонентов и летающий щуп для проведения электрического "
 "тестирования по методу аналогового сигнатурного анализа. "
 msgstr ""
+"The system combines an automatic optical system for recognizing component "
+"leads and a flying probe for conducting electrical testing by the ASA method "
 
 #: data/products.py:25
 msgid "Прост в использовании"
-msgstr ""
+msgstr "Easy to use"
 
 #: data/products.py:26
 msgid "Снизит нагрузку на инженера"
-msgstr ""
+msgstr "Will reduce the load on the engineer"
 
 #: data/products.py:27
 msgid "Не повредит плату"
-msgstr ""
+msgstr "Don't demage the PCB"
 
 #: data/products.py:28 data/products.py:56 data/products.py:112
 #: data/products.py:140
@@ -200,15 +201,15 @@ msgstr ""
 
 #: data/products.py:53
 msgid "PCB и BGA"
-msgstr ""
+msgstr "PCB and BGA"
 
 #: data/products.py:54
 msgid "Экономия времени на поиске до 3 раз"
-msgstr ""
+msgstr "Save search time up to 3 times"
 
 #: data/products.py:55
 msgid "Автоматическая проверка до 2500 выводов"
-msgstr ""
+msgstr "Up to 2500 pins"
 
 #: data/products.py:60
 msgid "Поддержка корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
@@ -241,30 +242,28 @@ msgid ""
 msgstr "Manual localizer of faulty electronic components with a touch screen."
 
 #: data/products.py:80
-#, fuzzy
 msgid ""
 "EyePoint S2 – второе поколение настольной системы для локализации "
 "неисправных электронных компонентов на печатных платах методом аналогового "
 "сигнатурного анализа.  Система обладает большим удобным сенсорным экраном, а "
 "дополнительная педаль позволит упростить управление системой."
 msgstr ""
-"EyePoint u2 is a miniature system for localizing faulty electronic "
-"components on PCB using ASA method. You connect EyePoint u2 to the PC via "
-"USB and start testing in manual mode."
+"EyePoint S2 - the second generation of a desktop system for manual "
+"localizing faulty electronic components on PCB using the Analog Signature "
+"Analysis (ASA) method. The system has a large convenient touch screen and an "
+"additional pedal will simplify the management of the system."
 
 #: data/products.py:84
 msgid "Простой и легкий прибор"
-msgstr ""
+msgstr "Simple and lightweight device"
 
 #: data/products.py:85 data/products.py:109
-#, fuzzy
 msgid "Частота зондирования до 100 кГц"
-msgstr "Scan speed: up to 10 cm²/ min"
+msgstr "Probing frequency up to 100 kHz"
 
 #: data/products.py:86
-#, fuzzy
 msgid "Доступен план тестирования "
-msgstr "\"Test Plan\" mode"
+msgstr "\"Test Plan\" mode: available "
 
 #: data/products.py:89 data/products.py:123
 msgid ""
@@ -296,15 +295,15 @@ msgstr "Export data in PNG data format to an external Flash drive"
 
 #: data/products.py:96 data/products.py:119
 msgid "Поддержка режима «План тестирования»"
-msgstr "\"Test Plan\" mode"
+msgstr "\"Test Plan\" mode available"
 
 #: data/products.py:97
 msgid "Возможность подключения к ПК по USB (Win, Linux)"
-msgstr "Ability to connect to PC via USB (Win, Linux)"
+msgstr "Can be connected to PC (Win, Linux) via USB"
 
 #: data/products.py:98
 msgid "Возможность программного управления (C/C++, C#, Python)"
-msgstr "Possibility of program management (C/C+, C#, Python)"
+msgstr "Possibility of program management: available (C/C+, C#, Python)"
 
 #: data/products.py:101
 msgid "EyePoint u2"
@@ -322,7 +321,6 @@ msgstr ""
 "USB and start testing in manual mode."
 
 #: data/products.py:105
-#, fuzzy
 msgid ""
 "EyePoint u2 – миниатюрная система для поиска неисправных электронных "
 "компонентов на печатных платах методом аналогового сигнатурного анализа АСА. "
@@ -332,16 +330,16 @@ msgid ""
 msgstr ""
 "EyePoint u2 is a miniature system for localizing faulty electronic "
 "components on PCB using ASA method. You connect EyePoint u2 to the PC via "
-"USB and start testing in manual mode."
+"USB and start testing in manual mode. Versions: u21 - single-channel system, "
+"u22 - dual-channel system."
 
 #: data/products.py:110
-#, fuzzy
 msgid "Миниатюрные размеры"
-msgstr "Dimensions: 60 х 40 х 5 mm"
+msgstr "Miniature size"
 
 #: data/products.py:111
 msgid "Доступен функционал старшей модели S2"
-msgstr ""
+msgstr "All functionality of S2"
 
 #: data/products.py:114 data/products.py:142
 msgid "Рабочие напряжения: 1.2, 3.3, 5, 12 В"
@@ -369,7 +367,7 @@ msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
 
 #: data/products.py:122
 msgid "Возможность программного управления: C#/C++, Qt, Python"
-msgstr "Possibility of program management: C#/C++, Qt, Python"
+msgstr "Possibility of program management: available (C#/C++, Qt, Python)"
 
 #: data/products.py:127
 msgid "EyePoint a2"
@@ -380,8 +378,8 @@ msgid ""
 "Одноканальный OEM модуль аналогового сигнатурного анализа без корпуса и "
 "пользовательского ПО."
 msgstr ""
-"Single-channel OEM analog signature analysis module without housing and open "
-"API."
+"Single-channel OEM analog signature analysis module with open API, without "
+"housing and user software."
 
 #: data/products.py:130
 msgid ""
@@ -393,19 +391,25 @@ msgid ""
 "платы. С модулем предоставляется доступ к API для разработки собственного "
 "программного обеспечения с использованием результатом измерения а2."
 msgstr ""
+"EyePoint a2 - OEM module designed to find  defective electronic components "
+"on PCB using the Analog Signature Analysis (\"ASA\") method with a USB "
+"connection to a PC and the possibility of drawing up a \"Test plan\". To "
+"connect the probes, a coaxial cable is used with the mandatory connection of "
+"the cable shield to the grounding contacts on the side of the board. The "
+"module provides access to the API for developing its own software using the "
+"measurement result of a2."
 
 #: data/products.py:137
 msgid "Открытый API"
-msgstr ""
+msgstr "Open API"
 
 #: data/products.py:138
 msgid "Полный функционал"
-msgstr ""
+msgstr "Full functionality"
 
 #: data/products.py:139
-#, fuzzy
 msgid "Максимально доступный"
-msgstr "Maximum board size: 280x275 mm"
+msgstr "Maximum available"
 
 #: data/products.py:144
 msgid "Интерфейс подключения к ПК: USB 2.0"
@@ -413,7 +417,7 @@ msgstr "USB 2.0 communication"
 
 #: data/products.py:145
 msgid "Возможность программного управления: С#/С++; Python"
-msgstr "Possibility of program management: C#/C++, Python"
+msgstr "Possibility of program management: available (C#/C++, Python)"
 
 #: data/products.py:146
 msgid "Габаритные размеры: 60х40х5 мм"
