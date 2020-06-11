@@ -17,7 +17,7 @@
 		<br>
         <div class="hilight-container">
             {% for hilight in product.hilights %}
-                <div class="hilight">{{hilight}}</div>
+                <div class="hilight">{{ tr(hilight) }}</div>
             {% endfor %}
         </div>
 
@@ -31,21 +31,26 @@
   <img src="/static/ico/{{ software_type(software_name).icon }}">
   <h3 class="download-h3">  {{ tr(software_type(software_name).friendly_name) }}</h3>
 </div>
+{% if software_type(software_name).description %}
+<div class="download-text">
+    {{ tr(software_type(software_name).description) }}
+</div>
+{% endif %}
 
 <table>
     <tbody>
       <tr>
+        <th>{{ tr(link) }}</th>
         <th>{{ tr(version) }}</th>
         <th>{{ tr(release_date) }}</th>
         <th>{{ tr(size) }}</th>
-        <th>{{ tr(link) }}</th>
       </tr>
       {% for file in software %}
       <tr>
+        <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
         <td class="td1">{{ file.version }}</td>
         <td class="td2">{{ file.date }}</td>
         <td class="td3">{{ file.size|filesizeformat }}</td>
-        <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
       </tr>
       {% endfor %}
 

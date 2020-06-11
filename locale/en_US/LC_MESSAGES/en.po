@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-25 02:18+0300\n"
+"POT-Creation-Date: 2020-05-30 21:11+0300\n"
 "PO-Revision-Date: 2020-06-01 15:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,39 +16,55 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 "X-Generator: Poedit 2.3\n"
 
-#: data/download.py:14
+#: data/download.py:15
 msgid "Документация"
 msgstr "Documentation"
 
-#: data/download.py:15
+#: data/download.py:16
+msgid "Документация к продукту"
+msgstr "Product documentation"
+
+#: data/download.py:17
 msgid "Драйвер"
 msgstr "Driver"
 
-#: data/download.py:16
+#: data/download.py:18
+msgid "Драйвера для разных операционных систем"
+msgstr "Drivers for different operation systems"
+
+#: data/download.py:19
 msgid "Прошивка"
 msgstr "Firmware"
 
-#: data/download.py:17
+#: data/download.py:20
+msgid "Файлы прошивок для загрузки в устройство"
+msgstr "Firmware files for device"
+
+#: data/download.py:21
 msgid "Софт"
 msgstr "Software"
 
-#: data/download.py:28
+#: data/download.py:22
+msgid "Программное обеспечение для ПК"
+msgstr "Software for PC"
+
+#: data/download.py:33
 msgid "Версия"
 msgstr "Version"
 
-#: data/download.py:29
+#: data/download.py:34
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: data/download.py:30
+#: data/download.py:35
 msgid "Размер"
 msgstr "Size"
 
-#: data/download.py:31
+#: data/download.py:36
 msgid "Ссылка"
 msgstr "Link"
 
-#: data/download.py:32
+#: data/download.py:37
 msgid "Скачать"
 msgstr "Download"
 
@@ -113,11 +129,11 @@ msgstr "Easy to use"
 
 #: data/products.py:26
 msgid "Снизит нагрузку на инженера"
-msgstr "Will reduce the load on the engineer"
+msgstr "Simplify the engineer's life"
 
 #: data/products.py:27
 msgid "Не повредит плату"
-msgstr "Don't demage the PCB"
+msgstr "Don't damage the PCB"
 
 #: data/products.py:28 data/products.py:56 data/products.py:112
 #: data/products.py:140
@@ -209,7 +225,7 @@ msgstr "Save search time up to 3 times"
 
 #: data/products.py:55
 msgid "Автоматическая проверка до 2500 выводов"
-msgstr "Up to 2500 pins"
+msgstr "Max of test pins: up to 2500 pins"
 
 #: data/products.py:60
 msgid "Поддержка корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
@@ -259,7 +275,7 @@ msgstr "Simple and lightweight device"
 
 #: data/products.py:85 data/products.py:109
 msgid "Частота зондирования до 100 кГц"
-msgstr "Probing frequency up to 100 kHz"
+msgstr "Test signal frequency range: 1 Hz - 100 kHz"
 
 #: data/products.py:86
 msgid "Доступен план тестирования "
