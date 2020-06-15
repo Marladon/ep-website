@@ -14,8 +14,10 @@ class SoftwareCategory:
 
 categories = (SoftwareCategory(name="documentation", friendly_name=_("Документация"), icon="doc.png",
                                description=_("Документация к продукту")),
-              SoftwareCategory(name="driver", friendly_name=_("Драйвер"), icon="driver.png",
-                               description=_("Драйвера для разных операционных систем")),
+              SoftwareCategory(name="brochure", friendly_name=_("Брошюры"), icon="brochure.png",
+                               description=_("Информация по продукту")),
+              SoftwareCategory(name="driver", friendly_name=_("Драйверы"), icon="driver.png",
+                               description=_("Драйверы для разных операционных систем")),
               SoftwareCategory(name="firmware", friendly_name=_("Прошивка"), icon="firmware.png",
                                description=_("Файлы прошивок для загрузки в устройство")),
               SoftwareCategory(name="software", friendly_name=_("Софт"), icon="software.png",
