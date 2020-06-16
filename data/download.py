@@ -14,7 +14,7 @@ class SoftwareCategory:
 
 categories = (SoftwareCategory(name="documentation", friendly_name=_("Документация"), icon="doc.png",
                                description=_("Документация к продукту")),
-              SoftwareCategory(name="brochure", friendly_name=_("Брошюры"), icon="brochure.png",
+              SoftwareCategory(name="datasheet", friendly_name=_("Брошюры"), icon="brochure.png",
                                description=_("Информация по продукту")),
               SoftwareCategory(name="driver", friendly_name=_("Драйверы"), icon="driver.png",
                                description=_("Драйверы для разных операционных систем")),
