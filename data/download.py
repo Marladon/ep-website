@@ -21,7 +21,11 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
               SoftwareCategory(name="firmware", friendly_name=_("Прошивка"), icon="firmware.png",
                                description=_("Файлы прошивок для загрузки в устройство")),
               SoftwareCategory(name="software", friendly_name=_("Софт"), icon="software.png",
-                               description=_("Программное обеспечение для ПК")))
+                               description=_("Программное обеспечение для ПК"))
+              SoftwareCategory(name="debugger", friendly_name=_("IVM debugger"), icon="software.png",
+                               description=_("ПО для обновления прошивок измерителей ВАХ EyePoint IVM"))
+              SoftwareCategory(name="EPCBoot", friendly_name=_("EPCBoot"), icon="software.png",
+                               description=_("ПО для обновления прошивок измерителей ВАХ EyePoint IVM")))
 
 
 @lru_cache(maxsize=128)
