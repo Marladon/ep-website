@@ -24,8 +24,17 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
                                description=_("Программное обеспечение для ПК")),
               SoftwareCategory(name="debugger", friendly_name=_("IVM debugger"), icon="software.png",
                                description=_("ПО для обновления прошивок измерителей ВАХ EyePoint IVM")),
-              SoftwareCategory(name="EPCBoot", friendly_name=_("EPCBoot"), icon="software.png",
-                               description=_("ПО для обновления прошивок измерителей ВАХ EyePoint IVM")))
+              SoftwareCategory(name="epcboot", friendly_name=_("EPCBoot"), icon="software.png",
+                               description=_("ПО для обновления прошивок измерителей ВАХ EyePoint IVM")),
+              SoftwareCategory(name="image", friendly_name=_("Прошивка встроенного компьютера"), icon="software.png",
+                               description=_("Пам-парам")),
+              SoftwareCategory(name="API", friendly_name=_("Документация по протоколу программного управления (API)"), icon="software.png",
+                               description=_("Пам-парам")),
+              SoftwareCategory(name="supporting_software", friendly_name=_("Стороннее вспомогательное ПО"), icon="software.png",
+                               description=_("Пам-парам")),
+              SoftwareCategory(name="library", friendly_name=_("Библиотека для программного управления"), icon="software.png",
+                               description=_("Пам-парам-пам-пам"))
+              )
 
 
 @lru_cache(maxsize=128)
