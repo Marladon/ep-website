@@ -44,8 +44,7 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
                                              "Для записи образа на SD карту в в ОС Windows можно использовать "
                                              "Win32 Disk Imager.")),
               SoftwareCategory(name="API", friendly_name=_("Документация по протоколу программного управления (API)"),
-                               icon="software.png",
-                               description=_("")),
+                               icon="software.png"),
               SoftwareCategory(name="supporting_software", friendly_name=_("Стороннее вспомогательное ПО"),
                                icon="software.png",
                                description=_("Дополнительное стороннее программное обеспечение, "
