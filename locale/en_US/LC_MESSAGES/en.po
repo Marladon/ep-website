@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2020-06-19 14:40+0300\n"
-"PO-Revision-Date: 2020-06-01 15:43+0300\n"
+"PO-Revision-Date: 2020-06-19 15:46+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -22,26 +22,23 @@ msgstr "Documentation"
 
 #: data/download.py:16
 msgid "Руководства пользователей, паспорт продукта и т.п."
-msgstr ""
+msgstr "User manual, product passport, etc."
 
 #: data/download.py:17
 msgid "Брошюры"
-msgstr ""
+msgstr "Datasheets"
 
 #: data/download.py:18
-#, fuzzy
 msgid "Информация по продукту"
 msgstr "Product documentation"
 
 #: data/download.py:19
-#, fuzzy
 msgid "Драйвера для Windows"
-msgstr "Driver"
+msgstr "Drivers for Windows"
 
 #: data/download.py:20
-#, fuzzy
 msgid "Для остальных операционных систем драйвер не нужен."
-msgstr "Drivers for different operation systems"
+msgstr "No driver is needed for other operating systems."
 
 #: data/download.py:21
 msgid "Прошивка"
@@ -52,6 +49,8 @@ msgid ""
 "Обновление прошивки осуществляется с помощью кроссплатформенного ПО EPCBoot "
 "(ссылка на скачивание на этой странице)."
 msgstr ""
+"Firmware updates are performed using EPCBoot cross-platform SOFTWARE "
+"(download link on this page)."
 
 #: data/download.py:24
 msgid "Софт"
@@ -65,10 +64,14 @@ msgid ""
 "Распространяемые пакеты Microsoft Visual C++ для Visual Studio 2013 (win32). "
 "Их можно скачать на этой странице."
 msgstr ""
+"PC software for Troubleshooting printed circuit boards using EyePoint analog "
+"signature analyzers.The SOFTWARE requires Python 3.6.8 (win32) with a set of "
+"necessary libraries, as well as Microsoft Visual C++ Redistributable "
+"packages for Visual Studio 2013 (win32). You can download them on this page."
 
 #: data/download.py:30
 msgid "IVM debugger"
-msgstr ""
+msgstr "IVM debugger"
 
 #: data/download.py:31
 msgid ""
@@ -77,10 +80,14 @@ msgid ""
 "автоматически сгенерированный интерфейс на библиотеке Qt и видеть "
 "распарсенные структуры ответов устройства."
 msgstr ""
+"Cross-platform software for debugging EyePoint signature analyzers and its "
+"source codes. This SOFTWARE allows you to manually call control commands via "
+"an automatically generated interface on the Qt library and see the device's "
+"parsed response structures."
 
 #: data/download.py:36
 msgid "EPCBoot"
-msgstr ""
+msgstr "EPCBoot"
 
 #: data/download.py:37
 msgid ""
@@ -88,10 +95,13 @@ msgid ""
 "EyePoint и его исходные коды. Репозиторий EPCBoot на GitHub: https://github."
 "com/EPC-MSU/EPCboot"
 msgstr ""
+"Cross-platform SOFTWARE for updating eyepoint signature analyzer firmware "
+"and its source codes. ETC Boot repository on GitHub: https://github.com/EPC-"
+"MSU/EPCboot"
 
 #: data/download.py:40
 msgid "Прошивка встроенного компьютера"
-msgstr ""
+msgstr "Firmware of the embedded computer"
 
 #: data/download.py:41
 msgid ""
@@ -100,44 +110,53 @@ msgid ""
 "см. руководство пользователя. Для записи образа на SD карту в в ОС Windows "
 "можно использовать Win32 Disk Imager."
 msgstr ""
+"Embedded operating system images for EyePoint s series devices. The image is "
+"updated by writing to the SD card. For more information, see the user's "
+"guide. To write an image to an SD card in Windows, you can use the Win32 "
+"Disk Imager."
 
 #: data/download.py:46
-#, fuzzy
 msgid "Документация по протоколу программного управления (API)"
-msgstr "Possibility of program management: available (C/C+, C#, Python)"
+msgstr "Documentation for the software management Protocol (API)"
 
 #: data/download.py:48
-#, fuzzy
 msgid "Стороннее вспомогательное ПО"
-msgstr "Pins arrangement: random"
+msgstr "Third-party support software"
 
 #: data/download.py:50
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами EyePoint."
 msgstr ""
+"Additional third-party software that may be required when working with "
+"EyePoint devices."
 
 #: data/download.py:52
-#, fuzzy
 msgid "Библиотека для программного управления"
-msgstr "Possibility of program management: available (C#/C++, Python)"
+msgstr "Library for software management"
 
 #: data/download.py:54
+#, fuzzy
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
 "(win32, win64, debian) и в виде исходных кодов."
 msgstr ""
+"Cross-platform library for working with EyePoint I–V curve-meters. The "
+"library is written in C, distributed as binary files (win32, win64, debian) "
+"and as source code."
 
 #: data/download.py:57
 msgid "Набор для разработчика (SDK)"
-msgstr ""
+msgstr "Developer kit (SDK)"
 
 #: data/download.py:59
 msgid ""
 "Включает в себя примеры управления устройством в исходных кодах для языков "
 "Си, С#, Python 3, а также биндинги для двух последних."
 msgstr ""
+"Includes examples of device management in source code for C, C#, and Python "
+"3, as well as bindings for the latter two."
 
 #: data/download.py:72
 msgid "Версия"
@@ -206,7 +225,6 @@ msgstr ""
 "components on PCB by ASA method."
 
 #: data/products.py:22 data/products.py:52
-#, fuzzy
 msgid ""
 "Система сочетает в себе автоматическую оптическую систему распознавания "
 "выводов компонентов и летающий щуп для проведения электрического "
@@ -216,7 +234,9 @@ msgid ""
 "версии. "
 msgstr ""
 "The system combines an automatic optical system for recognizing component "
-"leads and a flying probe for conducting electrical testing by the ASA method "
+"leads and a flying probe for conducting electrical testing by the ASA "
+"method. You need the latest driver to use the EyePoint system. Previous "
+"versions are posted for users who do not want to switch to new versions. "
 
 #: data/products.py:27
 msgid "Прост в использовании"
@@ -353,7 +373,6 @@ msgid ""
 msgstr "Manual localizer of faulty electronic components with a touch screen."
 
 #: data/products.py:84
-#, fuzzy
 msgid ""
 "EyePoint S2 – второе поколение настольной системы для локализации "
 "неисправных электронных компонентов на печатных платах методом аналогового "
@@ -366,7 +385,9 @@ msgstr ""
 "EyePoint S2 - the second generation of a desktop system for manual "
 "localizing faulty electronic components on PCB using the Analog Signature "
 "Analysis (ASA) method. The system has a large convenient touch screen and an "
-"additional pedal will simplify the management of the system."
+"additional pedal will simplify the management of the system. You need the "
+"latest driver to use the EyePoint system. Previous versions are posted for "
+"users who do not want to switch to new versions. "
 
 #: data/products.py:90
 msgid "Простой и легкий прибор"
@@ -436,7 +457,6 @@ msgstr ""
 "USB and start testing in manual mode."
 
 #: data/products.py:111
-#, fuzzy
 msgid ""
 "EyePoint u2 – миниатюрная система для поиска неисправных электронных "
 "компонентов на печатных платах методом аналогового сигнатурного анализа АСА. "
@@ -449,7 +469,9 @@ msgstr ""
 "EyePoint u2 is a miniature system for localizing faulty electronic "
 "components on PCB using ASA method. You connect EyePoint u2 to the PC via "
 "USB and start testing in manual mode. Versions: u21 - single-channel system, "
-"u22 - dual-channel system."
+"u22 - dual-channel system. You need the latest driver to use the EyePoint "
+"system. Previous versions are posted for users who do not want to switch to "
+"new versions. "
 
 #: data/products.py:118
 msgid "Миниатюрные размеры"
@@ -500,7 +522,6 @@ msgstr ""
 "housing and user software."
 
 #: data/products.py:138
-#, fuzzy
 msgid ""
 "EyePoint a2 - ОЕМ модуль, предназначенный для поиска неисправных электронных "
 "компонентов на печатных платах методом аналогового сигнатурного анализа "
@@ -513,13 +534,15 @@ msgid ""
 "Предыдущие версии выложены для пользователей, которые не хотят переходить на "
 "новые версии. "
 msgstr ""
-"EyePoint a2 - OEM module designed to find  defective electronic components "
-"on PCB using the Analog Signature Analysis (\"ASA\") method with a USB "
+"EyePoint a2 - OEM module designed to find defective electronic components on "
+"PCB using the Analog Signature Analysis (\"ASA\") method with a USB "
 "connection to a PC and the possibility of drawing up a \"Test plan\". To "
 "connect the probes, a coaxial cable is used with the mandatory connection of "
 "the cable shield to the grounding contacts on the side of the board. The "
 "module provides access to the API for developing its own software using the "
-"measurement result of a2."
+"measurement result of a2. You need the latest driver to use the EyePoint "
+"system. Previous versions are posted for users who do not want to switch to "
+"new versions. "
 
 #: data/products.py:147
 msgid "Открытый API"
