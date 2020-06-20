@@ -15,7 +15,7 @@ class SoftwareCategory:
 categories = (SoftwareCategory(name="documentation", friendly_name=_("Документация"), icon="doc.png",
                                description=_("Руководства пользователей, паспорт продукта и т.п.")),
               SoftwareCategory(name="datasheet", friendly_name=_("Брошюры"), icon="brochure.png",
-                               description=_("Информация по продукту")),
+                               description=_("Информация по продукту.")),
               SoftwareCategory(name="driver", friendly_name=_("Драйвера для Windows"), icon="driver.png",
                                description=_("Для остальных операционных систем драйвер не нужен.")),
               SoftwareCategory(name="firmware", friendly_name=_("Прошивка"), icon="firmware.png",
@@ -23,12 +23,12 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
                                              "ПО EPCBoot (ссылка на скачивание на этой странице).")),
               SoftwareCategory(name="software", friendly_name=_("Софт"), icon="software.png",
                                description=_("Программное обеспечение для ПК для поиска неисправностей на печатных "
-                                             "платах с использованием аналоговых сигнатурных анализаторов EyePoint."
+                                             "платах с использованием аналоговых сигнатурных анализаторов EyePoint. "
                                              "Для работы ПО требуется Python 3.6.8 (win32) с набором необходимых "
                                              "библиотек, а также Распространяемые пакеты Microsoft Visual C++ для "
                                              "Visual Studio 2013 (win32). Их можно скачать на этой странице.")),
               SoftwareCategory(name="debugger", friendly_name=_("IVM debugger"), icon="software.png",
-                               description=_("Кроссплатформенно ПО для отладки сигнатурных анализаторов "
+                               description=_("Кроссплатформенное ПО для отладки сигнатурных анализаторов "
                                              "EyePoint и его исходные коды. Данное ПО позволяет вручную вызывать "
                                              "команды управления через автоматически сгенерированный "
                                              "интерфейс на библиотеке Qt и видеть распарсенные структуры ответов "
