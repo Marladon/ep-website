@@ -36,7 +36,7 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
               SoftwareCategory(name="epcboot", friendly_name=_("EPCBoot"), icon="software.png",
                                description=_("Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
                                              "EyePoint и его исходные коды. "
-                                             "Репозиторий EPCBoot на GitHub:  <p><a href=\"https://github.com/EPC-MSU/EPCboot\"></a></p>")),
+                                             "Репозиторий EPCBoot на GitHub: https://github.com/EPC-MSU/EPCboot")),
               SoftwareCategory(name="image", friendly_name=_("Прошивка встроенного компьютера"), icon="software.png",
                                description=_("Образы встроенной операционной системы для устройств серии EyePoint S. "
                                              "Обновление образа осуществляется посредством записи на SD карту. "
